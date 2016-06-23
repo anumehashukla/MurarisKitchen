@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style type="text/css">
+html, body {
+  		height: 100%;
+  		width: 100%;
+  		margin: 0;
+        padding: 0;
+}
+#mainDiv {		
+	height: 100%;
+	width: 100%;
+    background-color: red;
+    
+    top:0; bottom:0; right:0; left:0;
+
+
+    /*-webkit-transition: height 2s;
+    -webkit-transition-timing-function: linear;
+   
+    /*-webkit-animation-name: backgroundAnimation; 
+    -webkit-animation-duration: 4s;
+    
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;*/
+
+    /*animation-name: backgroundAnimation;
+    animation-duration: 4s;*/
+}
+
+#mainDiv: hover {
+
+ width: 700px;
+	background-color: green;
+}
+
+@font-face {
+  font-family: "myCustomFont";
+  src: url(KGHAPPY.ttf) format("truetype");
+}
+
+/*@-webkit-keyframes backgroundAnimation {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}*/
+
+
+
+h1 { font-family: "myCustomFont";  text-align:center; font-size: 800%; color: white; font-weight: lighter; top:30%; position: absolute;  
+}
+
+
+</style>
+
+</head>
+
+
+	<body>
+		<div id="mainDiv" onload="getHeight()">
+			<h1>murari's kitchen</h1>
+		</div>
+		
+		<script src="main.js" type="text/javascript"/>
+		
+		
+	</body>
+</html>
