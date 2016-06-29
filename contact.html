@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<div id="div-contactDetails">
+	<p class="p-contactContent" style="font-family: 'myFont'; font-size:120%">Address</p>
+	<p class="p-contactContent"><br/>133a, Lane No. 1, Westend Marg, Said-ul-Ajaib<br/>
+	New Delhi<br/><br/></p>
+
+	<p class="p-contactContent" style="font-family: 'myFont'; font-size:120%">Hours</p>
+	<p class="p-contactContent"><br/>Monday - Saturday<br/>
+	 10 AM to 8 PM<br/><br/>
+
+	<p class="p-contactContent" style="font-family: 'myFont'; font-size:120%">Phone</p>
+	<p class="p-contactContent"><br/>+91 95605 07161
+
+	<p class="p-contactContent" style="font-family: 'myFont'; font-size:120%"><br/>Email</p>
+	<p class="p-contactContent"><br/>meetanumehashukla@gmail.com<br/>
+	 <br/>
+	
+	 What's On Your Mind?<br/>
+	 We welcome your comments, queries, and ideas!!
+	</p>
+</div>
+
+	<div id="div-map"></div>
+	<div id ="div-form">
+		<form action="MAILTO:meetanumehashukla@gmail.com" method="post" enctype="text/plain">
+  			<fieldset style="border:transparent">
+    		
+    			<br/>Name<span class="required">*</span><br/><br/><input class="input-textBoxStyle" id="name" type="text"><br/><br/>
+    			Email<span class="required">*</span><br/><br/><input class="input-textBoxStyle" id="email" type="text"><br/><br/>
+    			Subject<br/><br/><input class="input-textBoxStyle" id="subject" type="text"><br/><br/>
+    			Message<span class="required">*</span><br/><br/><textarea class="input-textBoxStyle" id="input-messageTextBox" type="text"></textarea>
+  			</fieldset>
+  			
+		
+  			
+		</form>
+		<br/><input class="input-submitButton" id="submitBtn" type="submit" value="Submit" onclick="mailSendBtnClicked()">
+	</div>
+
+
+
+ </body>
+</html>
