@@ -16,7 +16,7 @@ html, body {
 #div-header {	
 	height: 100%;
 	width: 100%;
-  background-color: black;
+  background-color: red;
 
   transition: height .5s ease-out;
   -webkit-transition: height .5s ease-out; /* Safari 3.1 to 6.0 */
@@ -38,7 +38,7 @@ html, body {
   border-width: medium;
  }
  #div-form{
-  color: black;
+  color: red;
   font-size: 80%;
   float: left;
   width: 50%;
@@ -78,13 +78,13 @@ html, body {
   position: absolute;
 }
 fieldset{
-  border-color: black;
+  border-color: red;
   border-style: solid;
   border-width: thin;
 }
 
 p {
-  color: black;
+  color: red;
   font-size: 130%;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -158,7 +158,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: black; 
+  color: red; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -170,7 +170,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: black; 
+  color: red; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -190,9 +190,7 @@ h1 {
 .ul-nav {
   width: calc(100% - 260px);
 }
-.ul-nav li{
-  margin-right:5%;
-}
+
 .ul-social { 
   /*margin-right: 3%;*/
   padding: 0px;
@@ -221,7 +219,7 @@ li a:hover {
     flex: 0 1 main-size
 }
 .input-textBoxStyle{
-  border-color:black;
+  border-color:red;
   border-style: solid;
   border-width: thin;
   width: 300px;
@@ -235,15 +233,15 @@ li a:hover {
   font-family: myFont;
   background-color: white;
   font-size: 100%;
-  color: black;
-  border: 1px solid black; 
+  color: red;
+  border: 1px solid red; 
   border-radius: 8px;
   cursor: pointer;
 
 }
 
 .input-submitButton:hover{
-  background-color : black;
+  background-color : red;
   color : white;
 }
 
@@ -259,14 +257,14 @@ li a:hover {
 }
 input:focus { 
     outline: none !important;
-    border-color: black;
-    box-shadow: 0 0 3px black;
+    border-color: red;
+    box-shadow: 0 0 3px red;
 }
 
 textarea:focus { 
     outline: none !important;
-    border-color: black;
-    box-shadow: 0 0 3px black;
+    border-color: red;
+    box-shadow: 0 0 3px red;
 }
 .p-menuContent{
   margin-top: '20px';
