@@ -16,7 +16,7 @@ html, body {
 #div-header {	
 	height: 100%;
 	width: 100%;
-  background-color: red;
+  background-color: black;
 
   transition: height .5s ease-out;
   -webkit-transition: height .5s ease-out; /* Safari 3.1 to 6.0 */
@@ -28,28 +28,47 @@ html, body {
 }
 
 #div-contactDetails{
-  width: 60%;
   float: left;
 }
 #div-map {
-  float:left;
   border-color: #CACECF;
   border-style: solid;
   border-width: medium;
+  margin-bottom: 20px;
+  margin-top: 20px;
  }
  #div-form{
-  color: red;
+  color: black;
   font-size: 80%;
   float: left;
   width: 50%;
   font-family: "myFont";
  }
+#div-mobileContainer {
+  height: 50px;
+}
+#div-menuIcon {
+  visibility: hidden;
+  margin-left: 7%;
+  margin-bottom: 2%;
+  margin-top: 3%;
+  display: inline-block;
+  color: black;
+}
+#div-mobileNav {
+  margin-top: 0px;  /* negative to hide the space taken by mobile icon */
+}
 
+#div-mobileSocialNav {
+  visibility: hidden;
+  float: right;
+}
 #div-nav {   
   margin: 3% 3% 0px 2%;
-  /*margin-left: 2%;
-  margin-top: 3%;*/
+  display:none;
+  height: 0px;
 }
+
 #div-menuHeader{
   margin-bottom: 40px;
 }
@@ -78,18 +97,21 @@ html, body {
   position: absolute;
 }
 fieldset{
-  border-color: red;
+  border-color: black;
   border-style: solid;
   border-width: thin;
 }
 
 p {
-  color: red;
-  font-size: 130%;
+  color: black;
+  margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 .p-contactContent{
-  margin: 0px;
+  margin-top: 12px;
+}
+.p-menuContent{
+  margin-top: 20px;
 }
 @font-face {
   font-family: "myCustomFont";
@@ -158,7 +180,18 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: red; 
+  color: black; 
+  font-weight: 100; 
+  padding: 0;  
+  transition: top .5s;
+  -webkit-transition: top .5s; /*Safari 3.1 to 6.0 */
+}
+
+.navsAnchorMobile { 
+  font-family: "myFont";
+  text-decoration: none;
+  font-size: 400%;
+  color: black; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -170,7 +203,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: red; 
+  color: black; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -188,7 +221,8 @@ h1 {
   display: inline-block;
 }
 .ul-nav {
-  width: calc(100% - 260px);
+  /*width: calc(100% - 260px);*/
+  padding-left:42px;
 }
 
 .ul-social { 
@@ -201,14 +235,29 @@ h1 {
   margin-left: 5%;
 }
 
+.ul-socialMobile { 
+  /*margin-right: 3%;*/
+    padding-right: 55px;
+    padding-top: 35px;
+
+}
+.ul-socialMobile li {
+  padding-left: 20px;
+}
+
 li {
-  display: inline;
+  display: inline-block;
 }
 
 
 li a:hover {
     background-color: beige;
     border-radius: 5px;
+}
+
+.mobileList {
+    display: block;
+    padding-bottom: 50px;
 }
 
 .flexbox:not(.ie11) * {
@@ -219,7 +268,7 @@ li a:hover {
     flex: 0 1 main-size
 }
 .input-textBoxStyle{
-  border-color:red;
+  border-color:black;
   border-style: solid;
   border-width: thin;
   width: 300px;
@@ -233,15 +282,29 @@ li a:hover {
   font-family: myFont;
   background-color: white;
   font-size: 100%;
-  color: red;
-  border: 1px solid red; 
+  color: black;
+  border: 1px solid black; 
   border-radius: 8px;
   cursor: pointer;
-
 }
 
 .input-submitButton:hover{
-  background-color : red;
+  background-color : black;
+  color : white;
+}
+
+.input-mobileNavButton{
+  font-family: 'myFont';
+  background-color: white;
+  font-size: 350%;
+  color: black;
+  border: 1px solid black; 
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-mobileNavButton:hover{
+  background-color : black;
   color : white;
 }
 
@@ -255,29 +318,35 @@ li a:hover {
   width: 170px;
   margin-right: 12px;
 }
+
+.mobileNavBtn{
+  height: 176px;
+  width: 600px;
+}
+ul{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
 input:focus { 
-    outline: none !important;
-    border-color: red;
-    box-shadow: 0 0 3px red;
+  outline: none !important;
+  border-color: black;
+  box-shadow: 0 0 3px black;
 }
 
 textarea:focus { 
     outline: none !important;
-    border-color: red;
-    box-shadow: 0 0 3px red;
-}
-.p-menuContent{
-  margin-top: '20px';
+    border-color: black;
+    box-shadow: 0 0 3px black;
 }
 
 #crossfade > img { 
-    max-width:550px;
-    max-height:550px;
+    /*max-width:550px;
+    max-height:550px;*/
     float:left;
     position: absolute;
     color: transparent;
     opacity: 0;
-    margin-left: 20px;
     z-index: 0;
     -webkit-backface-visibility: hidden;
     -webkit-animation: imageAnimation 30s linear infinite 0s;
@@ -366,3 +435,358 @@ textarea:focus {
     100% { opacity: 0 }
 }
 
+
+/* ----------- general all mobiles iphone 4, 4s, 5 , 5s, 6, galaxy s3, ----------- */
+
+/* ----------- iPhone 4 and 4S ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+
+      .input-submitButton 
+      {
+        font-size: 145%;
+      }
+      #img-zomato
+      {
+        width: 46px;
+        height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+
+      h1
+      {
+        font-size: 436%;
+      }
+}
+
+}
+/* ----------- iPhone 5 and 5S ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+
+      .input-submitButton 
+      {
+        font-size: 145%;
+      }
+      #img-zomato
+      {
+        width: 46px;
+        height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+      h1
+      {
+        font-size: 436%;
+      }
+}
+}
+/* ----------- iPhone 6, 6s ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+
+      .input-submitButton 
+      {
+        font-size: 145%;
+      }
+      #img-zomato
+      {
+        width: 46px;
+        height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+      h1
+      {
+        font-size: 500%;
+      }
+}
+}
+
+
+/* ----------- iPhone 6+ ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+    #div-contactDetails
+      {
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 145%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+
+}
+
+/* ----------- Galaxy S4, S5----------- */
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 320px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+      p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 145%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+}
+
+/* ----------- Galaxy S5 ----------- */
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) {
+      p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 208px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 145%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+}
+
+/* ----------- iPad mini,iPad 1 and 2  ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 237px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 162%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+      p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 237px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 162%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+/* ----------- Galaxy Tab 10.1 ----------- */
+
+/* Portrait and Landscape */
+@media 
+  (min-device-width: 800px) 
+  and (max-device-width: 1280px) {
+    p {
+        font-size:210%;
+        margin-right: 21px;
+      }
+      #div-contactDetails{
+        width: 100%;
+      }
+      .menuHeaderBtn {
+        height: 100px;
+        width: 237px;
+        margin-bottom: 12px;
+      }
+      .input-submitButton {
+        font-size: 162%;
+      }
+       #img-zomato{
+      width: 46px;
+      height: 46px;
+      }
+      #div-mobileContainer 
+      {
+        height: 100px;
+      }
+}
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    p {
+        font-size:130%;
+      }
+      #div-contactDetails{
+        width: 60%;
+
+      }
+      #crossfade > img 
+      { 
+          margin-left: 20px;
+        max-width:550px;
+        max-height:550px;
+      }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    p {
+        font-size:130%;
+      }
+    #div-contactDetails{
+        width: 60%;
+
+      }
+      #crossfade > img 
+      { 
+        margin-left: 20px;
+        max-width:550px;
+        max-height:550px;
+      }
+}
