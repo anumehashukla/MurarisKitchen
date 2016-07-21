@@ -13,41 +13,33 @@ if(window.location.hash ==''){
 }
 else if(window.location.hash =='#home'){
   pageState  ="#home";
-	setTimeout(checkDevice, 0, pageState);
+	setTimeout(checkDevice, 1000, pageState);
 
 }
 
 else if(window.location.hash =='#mobileHome'){
   pageState ="#mobileHome";
-  setTimeout(checkDevice, 0, pageState);
+  setTimeout(checkDevice, 1000, pageState);
 
 }
 else if(window.location.hash =='#menu'){
   pageState ="#menu";
-	setTimeout(checkDevice, 0, pageState);
+	setTimeout(checkDevice, 1000, pageState);
 
 }
 else if(window.location.hash =='#contact'){
   pageState ="#contact";
-	setTimeout(checkDevice, 0, pageState);
-
-
+	setTimeout(checkDevice, 1000, pageState);
 }
 else if(window.location.hash =='#about'){
   pageState ="#about";
-  setTimeout(checkDevice, 0, pageState);
-
-
+  setTimeout(checkDevice, 1000, pageState);
 }
 
 else if(window.location.hash =='#gallery'){
   pageState ="#gallery";
-
-  setTimeout(checkDevice, 0, pageState);
-
+  setTimeout(checkDevice, 1000, pageState);
 }
-
-
 });
 
 function checkDevice(pageState){
@@ -111,7 +103,7 @@ function openPage(pageState){
 function setMobileHeight(){
 
 var headerDivheight= $("#div-header").height();
-headerDivheight = headerDivheight/6;
+headerDivheight = headerDivheight/5;
 $("#div-header").css("height", headerDivheight);
 var headerDivWidth = $("#div-header").width();
 
@@ -127,13 +119,14 @@ var headerTop = (headerDivheight - headingHeight)/2;
 $("h1").css( "top", headerTop);
 $("h1").css( "left", headerLeft);
 
+$("#div-subContainer").css( "margin-top", '7%');
 
 };
 
 
 function setHeight(){
 var headerDivheight= $("#div-header").height();
-headerDivheight = headerDivheight/6;
+headerDivheight = headerDivheight/5;
 $("#div-header").css("height", headerDivheight);
 var headerDivWidth = $("#div-header").width();
 
@@ -151,15 +144,11 @@ $("h1").css( "left", headerLeft);
 
 $("#div-nav").show();
 $("#div-nav").css('top',headerDivheight);
+$("#div-subContainer").css( "margin-top", '3%');
+
 };
 
-//if(isMobile){
- // $(".ul-nav li").css('margin-right', "4%");
-//}
 
-//else if(isMobile){
-//  $(".ul-nav li").css('margin-right', "6%");
-//}
 
 
 $(window).on('hashchange', function() {

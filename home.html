@@ -2,10 +2,9 @@
 <html>
 <head>
 </head>
-
 <body>
 
-<div style="width:600px;height:padding:0px;margin:0px;float: left;">
+<div id="div-home">
 	<p style="margin:0px">Murari's Kitchen specializes in handcrafted sandwiches, salads, pastas  and sauces made with fresh ingredients and lots of love. At Murari's Kitchen we take the time and effort to make your sandwich the best you’ll ever have. 
 	<br/><br/>
 	Some people say we must have a secret…but really great sandwiches just take a little more time, effort, and the best quality ingredients. 
@@ -21,14 +20,39 @@
 	</p>
 </div>
 
-<div id="crossfade">
+<!--<div id="crossfade">
   <img class="mySlides1" src="images/1.jpg"  alt="Image 1" style="width:550px;height:500px;">
   <img class="mySlides2"  src="images/2.jpg" alt="Image 2" style="width:550px;height:500px;">
   <img class="mySlides3"  src="images/3.jpg" alt="Image 3" style="width:550px;height:500px;">
   <img class="mySlides4"  src="images/4.jpg" alt="Image 1" style="width:550px;height:500px;">
   <img class="mySlides4"  src="images/5.jpg" alt="Image 1" style="width:550px;height:500px;">
-</div>
+</div>-->
 
+<div class="carousel" style="height:450px;">         
+  <div class="item"><img src="images/1.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/2.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/3.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/4.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/5.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/6.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/7.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/8.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/9.jpg" alt="Owl Image"></div>
+  <div class="item"><img src="images/10.jpg" alt="Owl Image"></div>
+</div>
+ <script type="text/javascript">
+	$(document).ready(function() {
+ 
+  	$(".carousel").owlCarousel({
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+      items : 1,
+      navigation : true, // Show next and prev buttons   
+      itemsDesktop : [1600,3],
+      itemsTablet: [600,2]
+      //itemsDesktopSmall : [979,1] 
+  }); 
+});
+</script>
 
   </body>
 </html>

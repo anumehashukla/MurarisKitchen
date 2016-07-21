@@ -16,7 +16,7 @@ html, body {
 #div-header {	
 	height: 100%;
 	width: 100%;
-  background-color: black;
+  background-color: tomato;
 
   transition: height .5s ease-out;
   -webkit-transition: height .5s ease-out; /* Safari 3.1 to 6.0 */
@@ -24,7 +24,8 @@ html, body {
 #div-subContainer{
   margin-right: 7%;
   margin-left: 7%;
-  margin-top: 3%;
+  margin-bottom: 7%;
+  /*margin-top: 7%;*/
 }
 
 #div-contactDetails{
@@ -37,8 +38,13 @@ html, body {
   margin-bottom: 20px;
   margin-top: 20px;
  }
+ #div-home{
+  height:padding:0px;
+  margin:0px;
+  margin-bottom: 10px;
+ }
  #div-form{
-  color: black;
+  color: tomato;
   font-size: 80%;
   float: left;
   width: 50%;
@@ -53,7 +59,7 @@ html, body {
   margin-bottom: 2%;
   margin-top: 3%;
   display: inline-block;
-  color: black;
+  color: tomato;
 }
 #div-mobileNav {
   margin-top: 0px;  /* negative to hide the space taken by mobile icon */
@@ -96,14 +102,23 @@ html, body {
   visibility: hidden;
   position: absolute;
 }
+
+.carousel .item{
+  margin: 4px;
+}
+.carousel img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 fieldset{
-  border-color: black;
+  border-color: tomato;
   border-style: solid;
   border-width: thin;
 }
 
 p {
-  color: black;
+  color: tomato;
   margin: 0px;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -180,7 +195,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: black; 
+  color: tomato; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -191,7 +206,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 400%;
-  color: black; 
+  color: tomato; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -203,7 +218,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: black; 
+  color: tomato; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -237,27 +252,28 @@ h1 {
 
 .ul-socialMobile { 
   /*margin-right: 3%;*/
-    padding-right: 55px;
-    padding-top: 35px;
-
+  padding-right: 55px;
+  padding-top: 35px;
 }
 .ul-socialMobile li {
   padding-left: 20px;
+}
+.btnAppearance {
+  -webkit-appearance: none;
 }
 
 li {
   display: inline-block;
 }
 
-
 li a:hover {
-    background-color: beige;
-    border-radius: 5px;
+  background-color: beige;
+  border-radius: 5px;
 }
 
 .mobileList {
-    display: block;
-    padding-bottom: 50px;
+  display: block;
+  padding-bottom: 50px;
 }
 
 .flexbox:not(.ie11) * {
@@ -268,7 +284,7 @@ li a:hover {
     flex: 0 1 main-size
 }
 .input-textBoxStyle{
-  border-color:black;
+  border-color:tomato;
   border-style: solid;
   border-width: thin;
   width: 300px;
@@ -282,29 +298,29 @@ li a:hover {
   font-family: myFont;
   background-color: white;
   font-size: 100%;
-  color: black;
-  border: 1px solid black; 
+  color: tomato;
+  border: 1px solid tomato; 
   border-radius: 8px;
   cursor: pointer;
 }
 
 .input-submitButton:hover{
-  background-color : black;
+  background-color : tomato;
   color : white;
 }
 
 .input-mobileNavButton{
-  font-family: 'myFont';
+  font-family: 'myCustomFont';
   background-color: white;
   font-size: 350%;
-  color: black;
-  border: 1px solid black; 
+  color: tomato;
+  border: 1px solid tomato; 
   border-radius: 8px;
   cursor: pointer;
 }
 
 .input-mobileNavButton:hover{
-  background-color : black;
+  background-color : tomato;
   color : white;
 }
 
@@ -330,20 +346,20 @@ ul{
 }
 input:focus { 
   outline: none !important;
-  border-color: black;
-  box-shadow: 0 0 3px black;
+  border-color: tomato;
+  box-shadow: 0 0 3px tomato;
 }
 
 textarea:focus { 
     outline: none !important;
-    border-color: black;
-    box-shadow: 0 0 3px black;
+    border-color: tomato;
+    box-shadow: 0 0 3px tomato;
 }
 
-#crossfade > img { 
+/*#crossfade > img { 
     /*max-width:550px;
     max-height:550px;*/
-    float:left;
+    /*float:left;
     position: absolute;
     color: transparent;
     opacity: 0;
@@ -433,7 +449,7 @@ textarea:focus {
     17% { opacity: 1 }
     25% { opacity: 0 }
     100% { opacity: 0 }
-}
+}*/
 
 
 /* ----------- general all mobiles iphone 4, 4s, 5 , 5s, 6, galaxy s3, ----------- */
@@ -445,7 +461,7 @@ textarea:focus {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -486,7 +502,7 @@ textarea:focus {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -525,7 +541,7 @@ textarea:focus {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
     p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -566,7 +582,7 @@ textarea:focus {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
     #div-contactDetails
@@ -600,7 +616,7 @@ textarea:focus {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
       p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -632,7 +648,7 @@ textarea:focus {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
       p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -665,7 +681,7 @@ textarea:focus {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
       p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -696,7 +712,7 @@ textarea:focus {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 2) {
       p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
@@ -726,7 +742,7 @@ textarea:focus {
   (min-device-width: 800px) 
   and (max-device-width: 1280px) {
     p {
-        font-size:210%;
+        font-size:245%;
         margin-right: 21px;
       }
       #div-contactDetails{
