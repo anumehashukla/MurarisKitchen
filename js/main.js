@@ -70,7 +70,8 @@ function openPage(pageState){
   }
   else if(pageState=='#mobileHome'){
     $("#div-menuIcon").css('visibility','hidden');
-     $("#div-mobileSocialNav").css('visibility','hidden');
+    $("#div-mobileSocialNav").css('visibility','hidden');
+    $("#div-mobileContainer").show();
     
     mobileHomeClick();
   }
@@ -78,13 +79,15 @@ function openPage(pageState){
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
       $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
     }
     menuClick();
   }
   else if(pageState =='#contact'){
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
-       $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
     }
     contactClick();
   }
@@ -95,7 +98,7 @@ function openPage(pageState){
   }
   else if(pageState=='#gallery'){
     $("#div-menuIcon").css('visibility','visible');
-     $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileSocialNav").css('visibility','visible');
     galleryClick();
   }
 }
