@@ -110,7 +110,7 @@ var headerDivWidth = $("#div-header").width();
 
 $("h1").css( "text-align", "center");
 $("h1").css( "font-weight", "100");
-
+$("h1").css( "fontSize", "436%" );
 var headingWidth = $("h1").width();
 var headingHeight = $("h1").height();
 var headerLeft = (headerDivWidth - headingWidth)/2;
@@ -157,6 +157,7 @@ $(window).on('hashchange', function() {
     if(isMobile){
       $("#div-menuIcon").css('visibility','hidden');
       $("#div-mobileSocialNav").css('visibility','hidden');
+      $("#div-mobileContainer").css('display','none');
       mobileHomeClick();
     }
     else{
@@ -169,31 +170,36 @@ $(window).on('hashchange', function() {
   }
   else if(window.location.hash =='#mobileHome'){
     $("#div-menuIcon").css('visibility','hidden');
-     $("#div-mobileSocialNav").css('visibility','hidden');
+    $("#div-mobileSocialNav").css('visibility','hidden');
+    $("#div-mobileContainer").css('display','none');
     mobileHomeClick();
   }
   else if(window.location.hash =='#menu'){
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
-       $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
     }
   	menuClick();
   }
   else if(window.location.hash =='#contact'){
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
-       $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
     }
   	contactClick();
   }
   else if(window.location.hash =='#about'){
     $("#div-menuIcon").css('visibility','visible');
-     $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileContainer").show();
     aboutClick();
   }
   else if(window.location.hash =='#gallery'){
     $("#div-menuIcon").css('visibility','visible');
-     $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileContainer").show();
     galleryClick();
   }
 });
