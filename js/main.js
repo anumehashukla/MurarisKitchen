@@ -156,6 +156,7 @@ $(window).on('hashchange', function() {
   if(window.location.hash ==''){
     if(isMobile){
       $("#div-menuIcon").css('visibility','hidden');
+      $("#div-mobileSocialNav").css('visibility','hidden');
       mobileHomeClick();
     }
     else{
