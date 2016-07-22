@@ -4,7 +4,7 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: #FEFFF5;
+  /*background-color: #FEFFF5;*/
 }
 
 #div-container {    
@@ -17,7 +17,7 @@ html, body {
 #div-header {	
 	height: 100%;
 	width: 100%;
-  background-color: #FF8C69;
+  background-color: red;
 
   transition: height .5s ease-out;
   -webkit-transition: height .5s ease-out; /* Safari 3.1 to 6.0 */
@@ -49,7 +49,7 @@ html, body {
   margin-top: 10px
  }
  #div-form{
-  color: #FF8C69;
+  color: red;
   font-size: 80%;
   float: left;
   width: 50%;
@@ -65,7 +65,7 @@ html, body {
   margin-bottom: 2%;
   margin-top: 3%;
   display: inline-block;
-  color: #FF8C69;
+  color: red;
 }
 #div-mobileNav {
   margin-top: 0px;  /* negative to hide the space taken by mobile icon */
@@ -119,13 +119,13 @@ html, body {
   height: auto;
 }
 fieldset{
-  border-color: #FF8C69;
+  border-color: red;
   border-style: solid;
   border-width: thin;
 }
 
 p {
-  color: #FF8C69;
+  color: red;
   margin: 0px;
   /*font-family: 'Source Sans Pro', sans-serif;
   font-weight: bold;*/
@@ -208,7 +208,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: #FF8C69; 
+  color: red; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -219,7 +219,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 400%;
-  color: #FF8C69; 
+  color: red; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -231,7 +231,7 @@ h1 {
   font-family: "myFont";
   text-decoration: none;
   font-size: 170%;
-  color: #FF8C69; 
+  color: red; 
   font-weight: 100; 
   padding: 0;  
   transition: top .5s;
@@ -297,7 +297,7 @@ li a:hover {
     flex: 0 1 main-size
 }
 .input-textBoxStyle{
-  border-color:#FF8C69;
+  border-color:red;
   border-style: solid;
   border-width: thin;
   width: 300px;
@@ -311,31 +311,31 @@ li a:hover {
   font-family: myFont;
   background-color: white;
   font-size: 100%;
-  color: #FF8C69;
-  border: 1px solid #FF8C69; 
+  color: red;
+  border: 1px solid red; 
   border-radius: 8px;
   cursor: pointer;
 }
 
 .input-submitButton:hover{
-  background-color : #FF8C69;
+  background-color : red;
   color : white;
 }
 
 .input-mobileNavButton{
   font-family: 'myCustomFont';
-  background-color: #FF8C69;
+  background-color: red;
   font-size: 470%;
   color: white;
-  border: 1px solid #FF8C69; 
+  border: 1px solid red; 
   border-radius: 8px;
   cursor: pointer;
 }
 
-.input-mobileNavButton:hover{
+/*.input-mobileNavButton:hover{
   background-color : white;
-  color : #FF8C69;
-}
+  color : red;
+}*/
 
 #submitBtn{
   margin-left: 12px;
@@ -359,14 +359,14 @@ ul{
 }
 input:focus { 
   outline: none !important;
-  border-color: #FF8C69;
-  box-shadow: 0 0 3px #FF8C69;
+  border-color: red;
+  box-shadow: 0 0 3px red;
 }
 
 textarea:focus { 
     outline: none !important;
-    border-color: #FF8C69;
-    box-shadow: 0 0 3px #FF8C69;
+    border-color: red;
+    box-shadow: 0 0 3px red;
 }
 
 

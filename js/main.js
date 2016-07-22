@@ -182,21 +182,23 @@ $(window).on('hashchange', function() {
     mobileHomeClick();
   }
   else if(window.location.hash =='#menu'){
+    menuClick();
     $("#div-mobileContainer").css('display','none');
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
       $("#div-mobileSocialNav").css('visibility','visible');
       $("#div-mobileContainer").show();
     }
-  	menuClick();
+  	
   }
   else if(window.location.hash =='#contact'){
+    contactClick();
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
       $("#div-mobileSocialNav").css('visibility','visible');
       $("#div-mobileContainer").show();
     }
-  	contactClick();
+  	
   }
   else if(window.location.hash =='#about'){
     if(isMobile){
