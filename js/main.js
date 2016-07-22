@@ -62,7 +62,7 @@ function openPage(pageState){
   if(isMobile && pageState==''){
     mobileHomeClick();
   }
-  if(!isMobile && pageState==''){
+  else if(!isMobile && pageState==''){
     homeClick();
   }
   else if(pageState=='#home'){
@@ -92,13 +92,17 @@ function openPage(pageState){
     contactClick();
   }
   else if(pageState =='#about'){
-    $("#div-menuIcon").css('visibility','visible');
-     $("#div-mobileSocialNav").css('visibility','visible');
+    if(isMobile){
+      $("#div-menuIcon").css('visibility','visible');
+      $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
+    }
     aboutClick();
   }
   else if(pageState=='#gallery'){
     $("#div-menuIcon").css('visibility','visible');
     $("#div-mobileSocialNav").css('visibility','visible');
+    $("#div-mobileContainer").show();
     galleryClick();
   }
 }
@@ -106,7 +110,7 @@ function openPage(pageState){
 function setMobileHeight(){
 
 var headerDivheight= $("#div-header").height();
-headerDivheight = headerDivheight/5;
+headerDivheight = headerDivheight/6;
 $("#div-header").css("height", headerDivheight);
 var headerDivWidth = $("#div-header").width();
 
@@ -147,11 +151,9 @@ $("h1").css( "left", headerLeft);
 
 $("#div-nav").show();
 $("#div-nav").css('top',headerDivheight);
-$("#div-subContainer").css( "margin-top", '3%');
+$("#div-subContainer").css( "margin-top", '5%');
 
 };
-
-
 
 
 $(window).on('hashchange', function() {
@@ -164,11 +166,13 @@ $(window).on('hashchange', function() {
       mobileHomeClick();
     }
     else{
+ 
       homeClick();
     }
   	
   }
   else if(window.location.hash =='#home'){
+
   	homeClick();
   }
   else if(window.location.hash =='#mobileHome'){
@@ -178,6 +182,7 @@ $(window).on('hashchange', function() {
     mobileHomeClick();
   }
   else if(window.location.hash =='#menu'){
+    $("#div-mobileContainer").css('display','none');
     if(isMobile){
       $("#div-menuIcon").css('visibility','visible');
       $("#div-mobileSocialNav").css('visibility','visible');
@@ -194,9 +199,11 @@ $(window).on('hashchange', function() {
   	contactClick();
   }
   else if(window.location.hash =='#about'){
-    $("#div-menuIcon").css('visibility','visible');
-    $("#div-mobileSocialNav").css('visibility','visible');
-    $("#div-mobileContainer").show();
+    if(isMobile){
+      $("#div-menuIcon").css('visibility','visible');
+      $("#div-mobileSocialNav").css('visibility','visible');
+      $("#div-mobileContainer").show();
+    }
     aboutClick();
   }
   else if(window.location.hash =='#gallery'){
