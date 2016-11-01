@@ -1,3 +1,4 @@
+"use strict";
 	var firstLoad =0;
   var pageState;
   var isMobile = false; //initiate as false
@@ -6,7 +7,7 @@ $( document).ready(function() {
 });
 
 $(window).bind("load", function() {
-if(window.location.hash ==''){
+if(window.location.hash ===''){
   pageState ='';
 	setTimeout(checkDevice, 1000, pageState);
 
@@ -56,13 +57,13 @@ function checkDevice(pageState){
       openPage(pageState);
     }
     
-};
+}
 
 function openPage(pageState){
-  if(isMobile && pageState==''){
+  if(isMobile && pageState===''){
     mobileHomeClick();
   }
-  else if(!isMobile && pageState==''){
+  else if(!isMobile && pageState===''){
     homeClick();
   }
   else if(pageState=='#home'){
@@ -128,7 +129,7 @@ $("h1").css( "left", headerLeft);
 
 $("#div-subContainer").css( "margin-top", '7%');
 
-};
+}
 
 
 function setHeight(){
@@ -153,12 +154,12 @@ $("#div-nav").show();
 $("#div-nav").css('top',headerDivheight);
 $("#div-subContainer").css( "margin-top", '5%');
 
-};
+}
 
 
 $(window).on('hashchange', function() {
 
-  if(window.location.hash ==''){
+  if(window.location.hash ===''){
     if(isMobile){
       $("#div-menuIcon").css('visibility','hidden');
       $("#div-mobileSocialNav").css('visibility','hidden');
@@ -217,34 +218,31 @@ $(window).on('hashchange', function() {
 });
 
 
-
 function homeClick(){
 	$("#div-subContainer").load("home");
 	//return false;
-};
+}
 
 function mobileHomeClick(){
   $("#div-subContainer").load("mobileHome");
   //return false;
-};
-
+}
 function aboutClick(){
   $("#div-subContainer").load("about");
   return false;
-};
-
+}
 function menuClick(){
 	$("#div-subContainer").load("menu");
 	return false;
-};
+}
 function contactClick(){
 	$("#div-subContainer").load("contact", initMap);
 	return false;
-};
+}
 function galleryClick(){
   $("#div-subContainer").load("gallery");
   return false;
-};
+}
 
 function initMap() {
 		  var contactDivWidth = $("#div-contactDetails").css('width');
@@ -275,8 +273,7 @@ function initMap() {
     			title: 'Hello World!'
   		  });
   		  marker.setMap(map);
-};
-
+}
 
 function sandwichClick(){
    $("#div-Sandwich").css('visibility', 'visible');
@@ -287,7 +284,7 @@ function sandwichClick(){
    $("#div-Pizza").css('visibility', 'hidden');
    $("#div-Drinks").css('visibility', 'hidden');
 
-};
+}
 function saladClick(){
    $("#div-Salad").css('visibility', 'visible');
 
@@ -296,7 +293,7 @@ function saladClick(){
    $("#div-Burger").css('visibility', 'hidden');
    $("#div-Pizza").css('visibility', 'hidden');
    $("#div-Drinks").css('visibility', 'hidden');
-};
+}
 function pastaClick(){
    $("#div-Pasta").css('visibility','visible');
 
@@ -305,8 +302,7 @@ function pastaClick(){
    $("#div-Pizza").css('visibility', 'hidden');
    $("#div-Burger").css('visibility', 'hidden');
    $("#div-Drinks").css('visibility', 'hidden');
-};
-
+}
 
 function pizzaClick(){
    $("#div-Pizza").css('visibility', 'visible');
@@ -316,8 +312,7 @@ function pizzaClick(){
    $("#div-Pasta").css('visibility', 'hidden');
    $("#div-Burger").css('visibility', 'hidden');
    $("#div-Drinks").css('visibility', 'hidden');
-};
-
+}
 function burgerClick(){
    $("#div-Burger").css('visibility', 'visible');
 
@@ -326,7 +321,7 @@ function burgerClick(){
    $("#div-Pasta").css('visibility', 'hidden');
    $("#div-Pizza").css('visibility', 'hidden');
    $("#div-Drinks").css('visibility', 'hidden');
-};
+}
 function drinksClick(){
    $("#div-Drinks").css('visibility', 'visible');
 
@@ -336,5 +331,5 @@ function drinksClick(){
    $("#div-Pasta").css('visibility', 'hidden');
    $("#div-Pizza").css('visibility', 'hidden');
    $("#div-Burger").css('visibility', 'hidden');
-};
+}
 
